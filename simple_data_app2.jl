@@ -14,7 +14,7 @@ const DB_PATH = "dataframes.sqlite"
 const UPLOAD_PATH = join(@__DIR__,"public","upload")
 
 const JOINS = [Dict{:SOURCE => "file1_csv", :TARGET => "Strain_csv", :SOURCE_COL => "Strain", :TARGET_COL => "Strain"},
-               Dict{:SOURCE => "file1_csv", :TARGET => "Vector_csv", :SOURCE_COL => "Plasmid", :TARGET_COL => "Vector"}]
+               Dict{:SOURCE => "file1_csv", :TARGET => "Vector_csv", :SOURCE_COL => "Vector", :TARGET_COL => "Vector"}]
 
 # Helper function to convert filename to a valid SQL table name
 function filename_to_table_name(filename::AbstractString)
